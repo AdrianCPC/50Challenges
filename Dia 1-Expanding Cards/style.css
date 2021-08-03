@@ -38,13 +38,16 @@ body {
 }
 
 .panel.active {
+  color: blue;
 }
 
 .panel.active h3 {
+  color: #fff;
 }
 
 @media (max-width: 480px) {
   .container {
+    color: blue;
   }
 
   .panel:nth-of-type(4) {
