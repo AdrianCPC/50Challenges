@@ -11,6 +11,25 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+p{
+  font-size: 20px;
+}
+li{
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+i{
+  color: white;
+  margin-right: 10px;
+}
+nav{
+  position: absolute;
+  top: 65%;
+}
 
 .container {
   background-color: #fafafa;
@@ -18,10 +37,16 @@ body {
   width: 100vw;
   min-height: 100vh;
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.15s;
 }
 
 .container.show-nav {
   transform: rotate(-20deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .circle-container {
@@ -68,8 +93,41 @@ body {
   transform: rotate(90deg);
   transform-origin: top left;
 }
+.container + nav {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
 
-.container.show-nav + nav li {
+.container.show-nav + nav {
   transform: translateX(0);
-  transition-delay: 0.3s;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0.2s;
+}
+.content{
+  max-width: 70%;
+}
+.content small{
+  font-style: italic;
+  color: #222;
+}
+.content h1{
+  margin-bottom: 0;
+}
+.content p{
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.content img{
+  width: 100%;
+}
+nav #home {
+  margin-left: 0px;
+}
+nav #about {
+  margin-left: 20px;
+}
+nav #contact {
+  margin-left: 40px;
 }
