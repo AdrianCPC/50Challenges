@@ -1,14 +1,14 @@
 :root {
-    --line-fill: #3499db;
+    --line-fill:#3498db;
     --line-empty: #e0e0e0;
     --background-color: #f6f7fb;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
-body {
+body{
     background-color: var(--background-color);
     display: flex;
     align-items: center;
@@ -17,11 +17,11 @@ body {
     margin: 0;
 }
 
-.container {
+.container{
     text-align: center;
 }
 
-.progress-container {
+.progress-container{
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -29,31 +29,27 @@ body {
     width: 350px;
 }
 
-.progress-container::before {
+.progress-container::before{
+    background-color: var(--line-empty);
     content: '';
     position: absolute;
     top: 50%;
     left: 0;
-    transform: rotateY(-50%);
     height: 4px;
-    width: 100%;
-    background-color: var(--line-empty);
+    width: 95%;
 }
 
-.progress {
+.progress{
     background-color: var(--line-fill);
     height: 4px;
     width: 0%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    max-width: 100%;
-    border-radius: 50%;
-    /*margin-left: 1px;*/
-    transition: 0.4s ease;
+    max-width: 95%;
+    margin-left: 1px;
 }
 
-.circle {
+.circle{
     position: relative;
     height: 30px;
     width: 30px;
@@ -64,14 +60,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: white;
-    transition: 0.4s ease;
 }
 
-.circle.active {
+.circle.active{
     border-color: var(--line-fill);
 }
 
-.btn {
+.btn{
     background-color: var(--line-fill);
     color: white;
     border: 0px;
@@ -82,7 +77,7 @@ body {
     font-size: 14px;
 }
 
-.btn:disabled {
+.btn:disabled{
     background-color: var(--line-empty);
     cursor: not-allowed;
 }
