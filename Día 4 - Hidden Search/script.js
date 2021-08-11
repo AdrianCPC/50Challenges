@@ -1,8 +1,9 @@
-const open_btn = document.querySelector('.btn');
-const close_btn = document.querySelector('.btn')
-const inputS = document.querySelector('.input');
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input')
+const search = document.querySelector('.search');
 
-open_btn.addEventListener('click',()=>{
-    inputS.style.opacity=1
+btn.addEventListener('click',()=>{
+    search.classList.toggle('active');
+    input.focus();
 })
 
