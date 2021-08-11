@@ -5,3 +5,4 @@ const inputS = document.querySelector('.input');
 open_btn.addEventListener('click',()=>{
     inputS.style.opacity=1
 })
+
