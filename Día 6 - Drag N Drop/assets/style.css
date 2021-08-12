@@ -3,6 +3,7 @@
 }
 
 body {
+  background-color: darkblue;
 
 }
 
@@ -11,9 +12,13 @@ body {
 }
 
 .fill {
-
+  background-image: url('https://images.unsplash.com/ramdom/150x150');
+  position: relative;
+  height: 150px;
   width: 150px;
-
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
 }
 
 .hold {
