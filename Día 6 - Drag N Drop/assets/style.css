@@ -4,7 +4,6 @@
 
 body {
   background-color: darkblue;
-
 }
 
 .empty {
@@ -17,7 +16,9 @@ body {
 }
 
 .fill {
-  background-image: url('https://source.unsplash.com/ramdom/100x100');
+  background-image: url('./the-power-of-small.jpg');
+  background-position: center;
+  background-size: cover;
   position: relative;
   height: 137px;
   width: 140px;
@@ -27,7 +28,7 @@ body {
 }
 
 .hold {
-  border: solid #ccc 4px;
+  border: solid green 4px;
 }
 
 .hovered {
@@ -40,4 +41,10 @@ body {
 }
 
 @media (max-width: 800px) {
+  .empty{
+    width: 100px;
+  }
+  .fill{
+    width: 50px;
+  }
 }
