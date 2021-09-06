@@ -3,6 +3,8 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: darkblue;
 }
 
@@ -11,8 +13,8 @@ body {
   height: 160px;
   width: 160px;
   margin: 10px;
-  border: 6px black solid;
-  background-color: whitesmoke;
+  border: 3px white solid;
+  background-color: white;
 }
 
 .fill {
@@ -20,19 +22,19 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
-  height: 137px;
+  height: 140px;
   width: 140px;
   top: 6px;
-  left: 4px;
+  left: 7px;
   cursor: pointer;
 }
 
 .hold {
-  border: solid green 4px;
+  border: solid #ccc 4px;
 }
 
 .hovered {
-  background: #0000;
+  background: black;
   border-style: dashed;
 }
 
@@ -41,10 +43,14 @@ body {
 }
 
 @media (max-width: 800px) {
-  .empty{
-    width: 100px;
+  body{
+    display: flex;
+    flex-wrap:wrap;
   }
+  /* .empty{
+    width: 100px;
+  /}
   .fill{
     width: 50px;
-  }
+  /} */
 }
