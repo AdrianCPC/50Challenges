@@ -6,28 +6,28 @@ fill.addEventListener('dragstart', dragStart);
 fill.addEventListener('dragend', dragEnd);
 
 //CICLOS DE ARRASTRE
-empties.forEach(empty => {
-     empty.addEventListener('dragover', dragOver);
-     empty.addEventListener('dragenter', dragEnter);
-     empty.addEventListener('dragleave', dragLeave);
-     empty.addEventListener('drop', dragDrop);
- })
+// empties.forEach(empty => //{
+//      empty.addEventListener('dragover', dragOver);
+//      empty.addEventListener('dragenter', dragEnter);
+//      empty.addEventListener('dragleave', dragLeave);
+//      empty.addEventListener('drop', dragDrop);
+//  })
 //FUNCIONES DE DRAG O AGARRAR
-function dragOver(){
+// function dragOver(){
     
-}
+// }
 
 //FUNCION DRAG
-// function dragStart() {
-//     //this.className += 'hold';
-//     // setTimeout(() => (this.className = 'invisible'), 0);
-//     console.log('start');
-// }
+function dragStart() {
+     this.className += ' hold';
+     setTimeout(() => (this.className = 'invisible'), 0);
+     console.log('start');
+}
 
-// function dragEnd() {
-//     // this.className = 'fill';
-//     console.log('end');
-// }
+function dragEnd() {
+     this.className = 'fill';
+     console.log('end');
+}
 
 // function dragOver(e) {
 //     e.preventDefault();
