@@ -1,15 +1,16 @@
-const textEl = document.getElementById('')
+const textEl = document.getElementById('text')
+const text = 'We Love Programming!';
 let idx = 1
-let speed =  / speedEl.value
+//let speed =  / speedEl.value
 
-writeText()
+setInterval(writeText, 100)
 
-funtion writeText{
-    textEl.innerText =
+function writeText(){
+    textEl.innerText = text.slice(0,idx);
 
     idx++
 
-    if(idx > text.) {
+    if(idx > text.length) {
         idx = 1
     }
 
@@ -17,4 +18,4 @@ funtion writeText{
 }
 
 
-speedEl.addEventListener('', (e) => speed =  / )
+//speedEl.addEventListener('', (e) => speed =  / )
