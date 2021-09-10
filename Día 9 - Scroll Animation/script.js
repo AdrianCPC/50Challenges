@@ -1,8 +1,8 @@
-const boxes = document.querySelectorAll('.box')
+const boxes = document.querySelectorAll('.box');
 
-window.addEventListener('scroll', checkBoxes)
+window.addEventListener('scroll', checkBoxes);
 
-//checkBoxes()
+checkBoxes()
 
 function checkBoxes() {
     
@@ -12,9 +12,12 @@ function checkBoxes() {
 
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top
-         
-        ... 
-        
+
+        if(boxTop < triggerBottom) {
+            box.classList.add('show')
+        } else {
+            box.classList.remove('show')
+        }
     })
     
 }
