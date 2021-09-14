@@ -59,3 +59,23 @@ const testimonials = [
 ]
 
 
+ //Logica for updates testimonial
+let idx = 1
+
+function updateTestimonial () {
+  //console.log(testimonials[1])
+  const {name, position, photo, text} = testimonials [idx]
+  testimonial.innerHTML = text
+  userImage.src = photo
+  username.innerHTML = name
+  role.innerHTML = position
+
+  idx++
+
+  if (idx > testimonials.length - 1) {
+    idx = 0
+
+  }
+}
+//Time for interval
+setInterval(updateTestimonial, 10000)
