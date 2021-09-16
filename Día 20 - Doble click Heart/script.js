@@ -7,8 +7,8 @@ let clickTime = 0
 let timesClicked = 0
 
 /*  Test
-loveMe.addEventListener('dblclick', (e) => {
-    console.log('123')
+loveMe.addEventListener('click', (e) => {
+    console.log('45')
 } ) */
 
 
@@ -34,14 +34,14 @@ const createHeart = (e) => {
     heart.classList.add('fas')
     heart.classList.add('fa-heart')
 
-//Directions
+//Positions
     const x = e.clientX
     const y = e.clientY
     //console.log(x,y)
 
 
-    const leftOffset = e.target.OffsetLeft
-    const topOffset = e.target.OffsetTop
+    const leftOffset = e.target.offsetLeft
+    const topOffset = e.target.offsetTop
 
     const xInside = x - leftOffset
     const yInside = y - topOffset
