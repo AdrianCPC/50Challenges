@@ -3,9 +3,21 @@ const starts = document.getElementById('starts');
 const moon = document.getElementById('moon');
 const mountains_behind = document.getElementById('mountains_behind');
 const text = document.getElementById('text');
-const btn = document.getElementById('btn');
+// const btn = document.getElementById('btn');
 const mountains_front = document.getElementById('mountains_front');
 const header = document.querySelector('header');
+
+
+//Buttons const
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input')
+const search = document.querySelector('.search');
+
+btn.addEventListener('click',()=>{
+    search.classList.toggle('active');
+    input.focus();
+})
+
 
 //Events listener
 const value = 0;
