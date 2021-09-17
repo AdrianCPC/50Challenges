@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --font-family-footer: 'Roboto', sans-serif;
+}
 
 
 
@@ -167,6 +170,8 @@ section img#mountains_front{
 } */
 
 /*--SECCION RETOS--*/
+
+
 .sec{
     position: relative;
     padding: 100px;
@@ -174,11 +179,57 @@ section img#mountains_front{
 }
 .sec h2{
     font-size: 3.5em;
-    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Luckiest Guy', cursive;
+    margin-bottom: 80px;
     color:#fff;
 }
-.sec p{
+.img-ga {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+.g-img {
+    padding: 0 20px 20px;
+}
+.img-ga img {
+    width: 650px;
+}
+.img-ga img:hover {
+    opacity: .7;
+    transition: .9s;
+}
+/* .sec p{
     font-size: 2em;
     margin-bottom: 10px;
     color:#fff;
+}  */
+
+/*--SECCION FOOTER--*/
+.foo {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1c0522;
+}
+.foo i {
+    font-size: 50px;
+    color: antiquewhite;
+}
+.foo h3 {
+    color: antiquewhite;
+    font-size: 2rem;
+    font-family: var(--font-family-footer);
+}
+.foo p {
+    font-size: 1rem;
+    color: antiquewhite;
+    padding-top: 20px;
+    font-family: var(--font-family-footer);
 }
