@@ -3,7 +3,7 @@ const starts = document.getElementById('starts');
 const moon = document.getElementById('moon');
 const mountains_behind = document.getElementById('mountains_behind');
 const text = document.getElementById('text');
-// const btn = document.getElementById('btn');
+// const btn = document.getElementById('btn'); problems with this script review later
 const mountains_front = document.getElementById('mountains_front');
 const header = document.querySelector('header');
 
