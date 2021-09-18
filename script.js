@@ -54,80 +54,80 @@ function openPage() {
 
     switch (page) {
         case "Day 1":
-            window.open("./Dia 1-Expanding Cards");
+            window.open("./Dia 1-Expanding Cards/index.html");
             break;
         case "Day 2":
-            window.open("./Dia 2 - Progress Steps");
+            window.open("./Dia 2 - Progress Steps/index.html");
             break;
         case "Day 3":
-            window.open("./Día 3 - Rotating Navigation");
+            window.open("./Día 3 - Rotating Navigation/index.html");
             break;
         case "Day 4":
-            window.open("./Día 4 - Hidden Search");
+            window.open("./Día 4 - Hidden Search/index.html");
             break;
         case "Day 5":
-            window.open("./Día 5 - Blurry Loading");
+            window.open("./Día 5 - Blurry Loading/index.html");
             break;
         case "Day 6":
-            window.open("./Día 6 - Drag N Drop");
+            window.open("./Día 6 - Drag N Drop/index.html");
             break;
         case "Day 7":
-            window.open("./Día 7 - AutoText");
+            window.open("./Día 7 - AutoText/index.html");
             break;
         case "Day 8":
-            window.open("./Día 8 - Hoverboard");
+            window.open("./Día 8 - Hoverboard/index.html");
             break;
 
         case "Day 9":
-            window.open("./Día 9 - Scroll Animation");
+            window.open("./Día 9 - Scroll Animation/index.html");
             break;
         case "Day 10":
-            window.open("./Día 10 - Form input wave");
+            window.open("./Día 10 - Form input wave/index.html");
             break;
         case "Day 11":
-            window.open("./Día 11 - Dad Jokes");
+            window.open("./Día 11 - Dad Jokes/index.html");
             break;
         case "Day 12":
-            window.open("./Día 12 - Sound Board");
+            window.open("./Día 12 - Sound Board/index.html");
             break;
         case "Day 13":
-            window.open("./Día 13 - Live User Filter");
+            window.open("./Día 13 - Live User Filter/index.html");
             break;
         case "Day 14":
-            window.open("./Día 14 - Button Ripple Effect");
+            window.open("./Día 14 - Button Ripple Effect/index.html");
             break;
         case "Day 15":
-            window.open("./Día 15 - Background Slider");
+            window.open("./Día 15 - Background Slider/index.html");
             break;
         case "Day 16":
-            window.open("./Día 16 - Kinetic loader");
+            window.open("./Día 16 - Kinetic loader/index.html");
             break;
         case "Day 17":
-            window.open("./Día 17 - Netflix Navigation");
+            window.open("./Día 17 - Netflix Navigation/index.html");
             break;
         case "Day 18":
-            window.open("./Día 18 - Testimonial Box Switcher");
+            window.open("./Día 18 - Testimonial Box Switcher/index.html");
             break;
         case "Day 20":
-            window.open("./Día 20 - Doble click Heart");
+            window.open("./Día 20 - Doble click Heart/index.html");
             break;
         case "Day 21":
-            window.open("./Día 21 - Event Keycodes");
+            window.open("./Día 21 - Event Keycodes/index.html");
             break;
         case "Day 22":
-            window.open("./Día 22 - Mobile Nav Navigation");
+            window.open("./Día 22 - Mobile Nav Navigation/index.html");
             break;
         case "Day 23":
-            window.open("./Día 23 - Drink Water");
+            window.open("./Día 23 - Drink Water/index.html");
             break;
         case "Day 24":
-            window.open("./Día 24 - Feedback UI Desing");
+            window.open("./Día 24 - Feedback UI Desing/index.html");
             break;
         case "Day 26":
-            window.open("./Día 26 - Sticky Navigation");
+            window.open("./Día 26 - Sticky Navigation/index.html");
             break;
         case "Day 27":
-            window.open("./Día 27 - split landing page");
+            window.open("./Día 27 - split landing page/index.html");
             break;
         default:
             window.open("./index.html");
