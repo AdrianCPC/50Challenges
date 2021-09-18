@@ -20,9 +20,9 @@
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Retos</a></li>
             </ul> -->
-            <div class="search">
-                <input type="text" class="input" placeholder="Day 1" >
-                <button class="btn">
+            <div class="search" id="search">
+                <input type="text" class="input" placeholder="Day 1" id="searchBar" name="searchBar" onchange="openPage()" >
+                <button class="btn" name="btn" value="btn-search">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -35,35 +35,88 @@
             <!--<a href="#" class="btn">Explorar</a>-->
             <img src="/images/mountains_front.png" id="mountains_front" />
         </section>
+
+        <!--Challenges galllery-->
         <div class="sec" id="sec">
                 <h2>¡Hola Bienvenido!</h2>
-                <div class="img-ga">
-                    <a title="day1" href="/Dia 1-Expanding Cards/index.html"><img src="./images/day1.png" alt="day1" class="g-img"/></a>
-                    <a title="day1" href="/Dia 2 - Progress Steps/index.html"><img src="./images/day2.png" alt="day2" class="g-img"/></a>
-                    <a title="day1" href="/Día 3 - Rotating Navigation/index.html"><img src="./images/day3.png" alt="day3" class="g-img"/></a>
-                    <a title="day1" href="/Día 4 - Hidden Search/index.html"><img src="./images/day4.png" alt="day4" class="g-img"/></a>
-                    <a title="day1" href="/Día 5 - Blurry Loading/index.html"><img src="./images/day5.png" alt="day5" class="g-img"/></a>
-                    <a title="day1" href="/Día 6 - Drag N Drop/index.html"><img src="./images/day6.png" alt="day6" class="g-img"/></a>
-                    <a title="day1" href="/Día 7 - AutoText/index.html"><img src="./images/day7.png" alt="day7"class="g-img"/></a>
-                    <a title="day1" href="/Día 8 - Hoverboard/index.html"><img src="./images/day8.png" alt="day8" class="g-img"/></a>
-                    <a title="day1" href="/Día 9 - Scroll Animation/index.html"><img src="./images/day9.png" alt="day9" class="g-img"/></a>
-                    <a title="day1" href="/Día 10 - Form input wave/index.html"><img src="./images/day10.png" alt="day10" class="g-img"/></a>
-                    <a title="day1" href="/Día 11 - Dad Jokes/index.html"><img src="./images/day11.png" alt="day11" class="g-img"/></a>
-                    <a title="day1" href="/Día 12 - Sound Board/index.html"><img src="./images/day12.png" alt="day12" class="g-img"/></a>
-                    <a title="day1" href="/Día 13 - Live User Filter/index.html"><img src="./images/day13.png" alt="day13" class="g-img"/></a>
-                    <a title="day1" href="/Día 14 - Button Ripple Effect/index.html"><img src="./images/day14.png" alt="day14" class="g-img"/></a>
-                    <a title="day1" href="/Día 15 - Background Slider/index.html"><img src="./images/day15.png" alt="day15" class="g-img"/></a>
-                    <a title="day1" href="/Día 16 - Kinetic loader/index.html"><img src="./images/day16.png" alt="day16" class="g-img"/></a>
-                    <a title="day1" href="/Día 17 - Netflix Navigation/index.html"><img src="./images/day17.png" alt="day17" class="g-img"/></a>
-                    <a title="day1" href="/Día 18 - Testimonial Box Switcher/index.html"><img src="./images/day18.png" alt="day18" class="g-img"/></a>
-                    <a title="day1" href="/Día 20 - Doble click Heart/index.html"><img src="./images/day20.png" alt="day20" class="g-img"/></a>
-                    <a title="day1" href="/Día 21 - Event Keycodes/index.html"><img src="./images/day21.png" alt="day21" class="g-img"/></a>
-                    <a title="day1" href="/Día 22 - Mobile Nav Navigation/index.html"><img src="./images/day22.png" alt="day22" class="g-img"/></a>
-                    <a title="day1" href="/Día 23 - Drink Water/index.html"><img src="./images/day23.png" alt="day23" class="g-img"/></a>
-                    <a title="day1" href="/Día 24 - Feedback UI Desing/index.html"><img src="./images/day24.png" alt="day24" class="g-img"/></a>
-                    <a title="day1" href="/Día 26 - Sticky Navigation/index.html"><img src="./images/day26.png" alt="day26" class="g-img"/></a>
-                    <a title="day1" href="/Día 27 - split landing page/index.html"><img src="./images/day27.png" alt="day27" class="g-img"/></a>
+                <div class="img-ga" id="img-ga">
+                    <a title="day1" href="/Dia 1-Expanding Cards/index.html" target="_blank">
+                        <img src="./images/day1.png" alt="day1" class="g-img"/>
+                    </a>
+                    <a title="day2" href="/Dia 2 - Progress Steps/index.html" target="_blank">
+                        <img src="./images/day2.png" alt="day2" class="g-img"/>
+                    </a>
+                    <a title="day3" href="/Día 3 - Rotating Navigation/index.html" target="_blank">
+                        <img src="./images/day3.png" alt="day3" class="g-img"/>
+                    </a>
+                    <a title="day4" href="/Día 4 - Hidden Search/index.html" target="_blank">
+                        <img src="./images/day4.png" alt="day4" class="g-img"/>
+                    </a>
+                    <a title="day5" href="/Día 5 - Blurry Loading/index.html" target="_blank">
+                        <img src="./images/day5.png" alt="day5" class="g-img"/>
+                    </a>
+                    <a title="day6" href="/Día 6 - Drag N Drop/index.html" target="_blank">
+                        <img src="./images/day6.png" alt="day6" class="g-img"/>
+                    </a>
+                    <a title="day7" href="/Día 7 - AutoText/index.html" target="_blank">
+                        <img src="./images/day7.png" alt="day7"class="g-img"/>
+                    </a>
+                    <a title="day8" href="/Día 8 - Hoverboard/index.html" target="_blank">
+                        <img src="./images/day8.png" alt="day8" class="g-img"/>
+                    </a>
+                    <a title="day9" href="/Día 9 - Scroll Animation/index.html" target="_blank">
+                        <img src="./images/day9.png" alt="day9" class="g-img"/>
+                    </a>
+                    <a title="day10" href="/Día 10 - Form input wave/index.html" target="_blank">
+                        <img src="./images/day10.png" alt="day10" class="g-img"/>
+                    </a>
+                    <a title="day11" href="/Día 11 - Dad Jokes/index.html" target="_blank">
+                        <img src="./images/day11.png" alt="day11" class="g-img"/>
+                    </a>
+                    <a title="day12" href="/Día 12 - Sound Board/index.html" target="_blank">
+                        <img src="./images/day12.png" alt="day12" class="g-img"/>
+                    </a>
+                    <a title="day13" href="/Día 13 - Live User Filter/index.html" target="_blank">
+                        <img src="./images/day13.png" alt="day13" class="g-img"/>
+                    </a>
+                    <a title="day14" href="/Día 14 - Button Ripple Effect/index.html" target="_blank">
+                        <img src="./images/day14.png" alt="day14" class="g-img"/>
+                    </a>
+                    <a title="day15" href="/Día 15 - Background Slider/index.html" target="_blank">
+                        <img src="./images/day15.png" alt="day15" class="g-img"/>
+                    </a>
+                    <a title="day16" href="/Día 16 - Kinetic loader/index.html" target="_blank">
+                        <img src="./images/day16.png" alt="day16" class="g-img"/>
+                    </a>
+                    <a title="day17" href="/Día 17 - Netflix Navigation/index.html" target="_blank">
+                        <img src="./images/day17.png" alt="day17" class="g-img"/>
+                    </a>
+                    <a title="day18" href="/Día 18 - Testimonial Box Switcher/index.html" target="_blank">
+                        <img src="./images/day18.png" alt="day18" class="g-img"/>
+                    </a>
+                    <a title="day20" href="/Día 20 - Doble click Heart/index.html" target="_blank">
+                        <img src="./images/day20.png" alt="day20" class="g-img"/>
+                    </a>
+                    <a title="day21" href="/Día 21 - Event Keycodes/index.html" target="_blank">
+                        <img src="./images/day21.png" alt="day21" class="g-img"/>
+                    </a>
+                    <a title="day22" href="/Día 22 - Mobile Nav Navigation/index.html" target="_blank">
+                        <img src="./images/day22.png" alt="day22" class="g-img"/>
+                    </a>
+                    <a title="day23" href="/Día 23 - Drink Water/index.html" target="_blank">
+                        <img src="./images/day23.png" alt="day23" class="g-img"/>
+                    </a>
+                    <a title="day24" href="/Día 24 - Feedback UI Desing/index.html" target="_blank">
+                        <img src="./images/day24.png" alt="day24" class="g-img"/>
+                    </a>
+                    <a title="day26" href="/Día 26 - Sticky Navigation/index.html" target="_blank">
+                        <img src="./images/day26.png" alt="day26" class="g-img"/>
+                    </a>
+                    <a title="day27" href="/Día 27 - split landing page/index.html" target="_blank">
+                        <img src="./images/day27.png" alt="day27" class="g-img"/>
+                    </a>
                 </div>
+                <div id="list" class="data-list"></div>
             </div>
         <footer class="foo">
             <h3>50 Retos</h3>
